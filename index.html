@@ -1,62 +1,110 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="docs/css/pico.docs.min.css">
     <title>Masterarbeit Bruno</title>
-  </head>
-  <body>
-    <nav class="container">
-        <ul>
-          <li><strong>Annotationsmodell Hannah Arendt</strong></li>
-        </ul>
-        <ul>
-          <li><a href="#">Impressum</a></li>
-        </ul>
-      </nav>
-    <main class="container" id="docs">
-        <aside>
-            <nav class="closed-on-mobile">
-                <a href="./" class="secondary" id="toggle-docs-navigation">
-                     Table of content
-                </a>
-                <details>
-                    <summary>Korpus</summary>
-                    <ul>
-                        <li>
-                            <a href="./" id="start-link" class="secondary">Usage</a>
-                        </li>
-                        <li>
-                            <a href="./themes.html" id="themes-link" class="secondary">Themes</a>
-                        </li>
-                        <li>
-                            <a href="./customization.html" id="customization-link" class="secondary">Customization</a>
-                        </li>
-                        <li>
-                            <a href="./classless.html" id="classless-link" class="secondary">Class-less version</a>
-                        </li>
-                        <li>
-                            <a href="./rtl.html" id="rtl-link" class="secondary">RTL</a>
-                        </li>
-                    </ul>
-                </details>
-            </nav>
-            <script>
-            const activeLink = document.querySelector("aside a#classless-link"),
-                parentAccordion = activeLink.closest("details");
-            activeLink.setAttribute("aria-current", "page"),
-            parentAccordion.setAttribute("open", "true")
-            </script>
-        </aside>
-        <div role="document">
-            <section id="classless">
-                <h2>Beschaffenheit</h2>
-            </section>
-        </div>
-    </main>  
-  </body>
+</head>
+
+<body>
+        <nav class="container-fluid">
+            <ul>
+              <li><strong>Annotationsmodell Hannah Arendt</strong></li>
+            </ul>
+            <ul>
+              <li><a href="#">Impressum</a></li>
+            </ul>
+          </nav>
+        <main class="container" id="docs">
+            <aside>
+                <nav class="closed-on-mobile">
+                    <a href="./" class="secondary" id="toggle-docs-navigation">
+                        Table of content
+                    </a>
+                    <details>
+                        <summary>Korpus</summary>
+                        <ul>
+                            <li>
+                                <a href="./beschaffenheit.html" class="secondary">Beschaffenheit</a>
+                            </li>
+                            <li>
+                                <a href="./stichprobe.html" class="secondary">Stichprobe</a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Annotationsmodell</summary>
+                        <ul>
+                            <li>
+                                <a href="./einordnung.html" class="secondary">Einordnung der Begriffe Lesespur und
+                                    Annotation</a>
+                            </li>
+                            <li>
+                                <a href="./modell.html" class="secondary">Das Modell</a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Erfassung</summary>
+                        <ul>
+                            <li>
+                                <a href="./transkiption.html" class="secondary">Transkription</a>
+                            </li>
+                            <li>
+                                <a href=".nomenklatur.html" class="secondary">Nomenklatur</a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Auswertung</summary>
+                        <ul>
+                            <li>
+                                <a href="./auswertungSpuren.html" class="secondary">Auswertung der Lesespuren</a>
+                            </li>
+                            <li>
+                                <a href=".auswertungModell.html" class="secondary">Auswertung der Anwendbarkeit des Modells</a>
+                            </li>
+                        </ul>
+                    </details>
+                </nav>
+                <script>
+                    const activeLink = document.querySelector("aside a#classless-link"),
+                        parentAccordion = activeLink.closest("details");
+                    activeLink.setAttribute("aria-current", "page"),
+                        parentAccordion.setAttribute("open", "true")
+                </script>
+            </aside>
+            <div role="document">
+                <section id="classless">
+                    <h2>Willkommen!</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+                        
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+                        
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
+                        
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.   
+                        
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.   
+                        
+                        Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.   
+                        
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+                        
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+                        
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
+                        
+                        Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo</p>
+                </section>
+            </div>
+        </main>
+</body>
 
 
 </html>
