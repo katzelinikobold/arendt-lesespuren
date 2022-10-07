@@ -10,92 +10,145 @@
 </head>
 
 <body>
-        <nav class="container">
-            <ul>
-              <li><strong>Annotationsmodell Hannah Arendt</strong></li>
-            </ul>
-            <ul>
-              <li><a href="#">Impressum</a></li>
-            </ul>
-          </nav>
-        <main class="container" id="docs">
-            <aside>
-                <nav class="closed-on-mobile">
-                    <a href="./" class="secondary" id="toggle-docs-navigation">
-                        Table of content
-                    </a>
-                    <details>
-                        <summary>Korpus</summary>
-                        <ul>
-                            <li>
-                                <a href="./beschaffenheit.html" class="secondary">Beschaffenheit</a>
-                            </li>
-                            <li>
-                                <a href="./stichprobe.html" class="secondary">Stichprobe</a>
-                            </li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Annotationsmodell</summary>
-                        <ul>
-                            <li>
-                                <a href="./einordnung.html" class="secondary">Einordnung der Begriffe Lesespur und
-                                    Annotation</a>
-                            </li>
-                            <li>
-                                <a href="./modell.html" class="secondary">Das Modell</a>
-                            </li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Erfassung</summary>
-                        <ul>
-                            <li>
-                                <a href="./transkription.html" class="secondary">Transkription</a>
-                            </li>
-                            <li>
-                                <a href="./nomenklatur.html" class="secondary">Nomenklatur</a>
-                            </li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Auswertung</summary>
-                        <ul>
-                            <li>
-                                <a href="./auswertungSpuren.html" class="secondary">Auswertung der Lesespuren</a>
-                            </li>
-                            <li>
-                                <a href="./auswertungModell.html" class="secondary">Auswertung der Anwendbarkeit des Modells</a>
-                            </li>
-                        </ul>
-                    </details>
-                </nav>
-                <script>
-                    const activeLink = document.querySelector("aside a#classless-link"),
-                        parentAccordion = activeLink.closest("details");
-                    activeLink.setAttribute("aria-current", "page"),
-                        parentAccordion.setAttribute("open", "true")
-                </script>
-            </aside>
-            <div role="document">
-                <section id="classless">
-                    <h1>Einführung</h1>
-                    <p>Bei dieser Webseite handelt es sich um die Webpräsentation einer Masterarbeit zur Erlangug des akademischen Grades <i>Master of Arts</i> im Rahmen des Studiengangs <i>Digitale Methodik in den Geistes- und Kulturwissenschaften</i>. Thema der Arbeit ist das Aufstellen und Erproben eines Annotationsmodells zu den Lesespuren Hannah Arendts im Beispiel zweier Werke von Karl Jaspers.</p>
-                    <p>Diese Webseite dient dazu wichtige Punkte aus der detaillierten, schriftlichen Ausführung der Masterarbeit nocheinmal in digitaler Form hervorzuheben. Alle Forschungsdaten, die im Zuge der Untersuchung erzeugt wurden, sind jedoch frei zugänglich und können in diesem <a href="https://gitlab.rlp.net/abruno/masterarbeit-annotationsmodell-arendt">GitLab-Repositorium</a> abgerufen und zur weiteren Forschung wiederverwendet werden.</p>
-                </section>
-                <section id="classless">
-                    <h2>Thematische Hinführung</h2>
-                    <p>Die vorliegende Untersuchung verfolgt das Ziel der Entwicklung und Erprobung eines Annotationsmodells im Sinne eines Datenmodells zur Erfassung der von Hannah Arendt in ihrer Privatbibliothek hinterlassenen Lesespuren. Diese Betrachtung bewegt sich damit innerhalb der beiden ineinandergreifenden Disziplinen der Lesespurenforschung und der Digital Humanities. Die Lesespurenforschung befasst sich mit der Frage, wie, wo, wann, wozu und von wem Lesespuren hinterlassen werden und wie diese zu beschreiben und kategorisieren sind. Als Lesespuren sind dabei physische Gebrauchsspuren (z.B. schriftliche Anmerkungen) zu verstehen, die während der Lektüre eines Werkes hinterlassen wurden und somit Auskunft darüber geben, mit welcher Intensität, mit welchen Interessen und unter welchen intellektuellen Voraussetzungen und Implikationen sie gelesen wurden.  Durch die Erfassung und Analyse von Lesespuren ist es demnach möglich tiefere Einblicke in die Erkenntnisinteressen des Lesenden während der Lektüre zu erlangen.</p>
-                    <p>Das entwickelte Datenmodell bildet im Zuge dessen den digital-methodischen Kern der Erfassung und grundlegenden Kategorisierung der Lesespuren Hannah Arendts und soll im Hinblick auf Anwendbarkeit und Wiederverwendbarkeit in diesem Forschungskontext durch die Betrachtung zweier ausgewählter Werke Karl Jaspers aus Arendts Handbibliothek erprobt werden. Das Ziel der vorliegenden Untersuchung ist es demnach ausdrücklich nicht eine kritische Edition der Lesespuren Hannah Arendts anzufertigen, sondern diese vielmehr mittels des aufgestellten Datenmodells systematisch einzuordnen, zu erfassen sowie durch quantitative und qualitative Auswertungen mögliche Erkenntnisse über das Lektüreverhalten der Philosophin zu ge-winnen. Zentral ist dabei die Frage, wie gut das entwickelte Datenmodell als methodische Grundlage dieses Erkenntnisinteresse erfüllen kann.</p>
-                </section>
-                <section id="classsless">
-                    <h2>Datengegestand</h2>
-                    <p>Als Datengrundlage dient <a href="https://blogs.bard.edu/arendtcollection/">The Hannah Arendt Collection</a>, welche sich seit Arendts Tod im Jahre 1975 im Besitz des Bard College in Annadale-on-Hudson im Bundesstaat New York befindet. Bei der Sammlung handelt es sich um Arendts persönliche Handbibliothek, welche laut Internetpräsentation des Bard College insgesamt etwa 4000 Werke umfasst und in ihrem letzten Wohnsitz in New York gefunden wurde. Von diesen Werken enthalten nach Angaben des Colleges etwa 900 Bücher Marginalia, Notizen, Unterstreichungen oder Widmungen durch die Autoren. Ziel der Hannah Arendt Collection ist es, die annotierte Privatbibliothek zu erhalten, zu scannen und alle Seiten mit Arendts Markierungen zu digitalisieren.</p>
-                </section>
-            </div>
-        </main>
-        <script src="docs/js/commons.min.js"></script>
-        <script src="docs/js/customization.min.js"></script>
+    <nav class="container">
+        <ul>
+            <li><strong>Annotationsmodell Hannah Arendt</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Impressum</a></li>
+        </ul>
+    </nav>
+    <main class="container" id="docs">
+        <aside>
+            <nav class="closed-on-mobile">
+                <a href="./" class="secondary" id="toggle-docs-navigation">
+                    Table of content
+                </a>
+                <details>
+                    <summary>Korpus</summary>
+                    <ul>
+                        <li>
+                            <a href="./beschaffenheit.html" class="secondary">Beschaffenheit</a>
+                        </li>
+                        <li>
+                            <a href="./stichprobe.html" class="secondary">Stichprobe</a>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Annotationsmodell</summary>
+                    <ul>
+                        <li>
+                            <a href="./einordnung.html" class="secondary">Einordnung der Begriffe Lesespur und
+                                Annotation</a>
+                        </li>
+                        <li>
+                            <a href="./modell.html" class="secondary">Das Modell</a>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Erfassung</summary>
+                    <ul>
+                        <li>
+                            <a href="./transkription.html" class="secondary">Transkription</a>
+                        </li>
+                        <li>
+                            <a href="./nomenklatur.html" class="secondary">Nomenklatur</a>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Auswertung</summary>
+                    <ul>
+                        <li>
+                            <a href="./auswertungSpuren.html" class="secondary">Auswertung der Lesespuren</a>
+                        </li>
+                        <li>
+                            <a href="./auswertungModell.html" class="secondary">Auswertung der Anwendbarkeit des
+                                Modells</a>
+                        </li>
+                    </ul>
+                </details>
+            </nav>
+            <script>
+                const activeLink = document.querySelector("aside a#classless-link"),
+                    parentAccordion = activeLink.closest("details");
+                activeLink.setAttribute("aria-current", "page"),
+                    parentAccordion.setAttribute("open", "true")
+            </script>
+        </aside>
+        <div role="document">
+            <section id="classless">
+                <h1>Einführung</h1>
+                <p>Bei dieser Webseite handelt es sich um die Webpräsentation einer Masterarbeit zur Erlangug des
+                    akademischen Grades <i>Master of Arts</i> im Rahmen des Studiengangs <i>Digitale Methodik in den
+                        Geistes- und Kulturwissenschaften</i>. Thema der Arbeit ist das Aufstellen und Erproben eines
+                    Annotationsmodells zu den Lesespuren Hannah Arendts im Beispiel zweier Werke von Karl Jaspers.</p>
+                <p>Diese Webseite dient dazu wichtige Punkte aus der detaillierten, schriftlichen Ausführung der
+                    Masterarbeit nocheinmal in digitaler Form hervorzuheben. Alle Forschungsdaten, die im Zuge der
+                    Untersuchung erzeugt wurden, sind jedoch frei zugänglich und können in diesem <a
+                        href="https://gitlab.rlp.net/abruno/masterarbeit-annotationsmodell-arendt">GitLab-Repositorium</a>
+                    abgerufen und zur weiteren Forschung wiederverwendet werden.</p>
+            </section>
+            <section id="classless">
+                <h2>Thematische Hinführung</h2>
+                <p>Die vorliegende Untersuchung verfolgt das Ziel der Entwicklung und Erprobung eines Annotationsmodells
+                    im Sinne eines Datenmodells zur Erfassung der von Hannah Arendt in ihrer Privatbibliothek
+                    hinterlassenen Lesespuren. Diese Betrachtung bewegt sich damit innerhalb der beiden
+                    ineinandergreifenden Disziplinen der Lesespurenforschung und der Digital Humanities. Die
+                    Lesespurenforschung befasst sich mit der Frage, "wie, wo, wann, wozu und von wem Lesespuren
+                    hinterlassen werden und wie diese zu beschreiben und kategorisieren sind".<sup><a id="anker1"
+                            title="Literaturangabe" href="#fn1">[1]</a></sup> Als Lesespuren sind dabei physische
+                    Gebrauchsspuren (z.B. schriftliche Anmerkungen) zu verstehen, die während der Lektüre eines Werkes
+                    hinterlassen wurden und somit Auskunft darüber geben, mit welcher Intensität, mit welchen Interessen
+                    und unter welchen intellektuellen Voraussetzungen und Implikationen sie gelesen wurden.<sup><a id="anker2"
+                        title="Literaturangabe" href="#fn2">[2]</a></sup> Durch die
+                    Erfassung und Analyse von Lesespuren ist es demnach möglich tiefere Einblicke in die
+                    Erkenntnisinteressen des Lesenden während der Lektüre zu erlangen.</p>
+                <p>Die Art und Weise der Erfassung und Auswertung ist im Rahmen dieser Arbeit im Feld der Digital
+                    Humanities angesiedelt. Unter den Digitalen Geisteswissenschaften kann im Allgemeinen „die Summe
+                    aller Versuche“ verstanden werden, „die Informationstechniken auf den Gegenstand der
+                    Geisteswissenschaften anzuwenden“.<sup><a id="anker3" title="Literaturangabe"
+                            href="#fn3">[3]</a></sup> Konkret ist darunter an dieser Stelle die Verwen-dung von
+                    digitalen Methoden bei der Datenaggregation, der systematischen Erfassung der Lesespuren sowie ihrer
+                    Auswertung zu verstehen. Die Verwen-dung solcher digital-quantitativen Werkzeuge und Methoden
+                    ermöglicht eine erhöhte Intersubjektivität und Nachvollziehbarkeit in der Untersuchung des
+                    Forschungsgegenstands und untermauert zusätzlich Erkenntnisse, welche auf traditionell
+                    geisteswissenschaftlich-hermeneutischer Ebene gewonnen werden. </p>
+                <p>Das entwickelte Datenmodell bildet im Zuge dessen den digital-methodischen Kern der Erfassung und
+                    grundlegenden Kategorisierung der Lesespuren Hannah Arendts und soll im Hinblick auf Anwendbarkeit
+                    und Wiederverwendbarkeit in diesem Forschungskontext durch die Betrachtung zweier ausgewählter Werke
+                    Karl Jaspers aus Arendts Handbibliothek erprobt werden. Das Ziel der vorliegenden Untersuchung ist
+                    es demnach ausdrücklich nicht eine kritische Edition der Lesespuren Hannah Arendts anzufertigen,
+                    sondern diese vielmehr mittels des aufgestellten Datenmodells systematisch einzuordnen, zu erfassen
+                    sowie durch quantitative und qualitative Auswertungen mögliche Erkenntnisse über das
+                    Lektüreverhalten der Philosophin zu gewinnen. Zentral ist dabei die Frage, wie gut das entwickelte
+                    Datenmodell als methodische Grundlage dieses Erkenntnisinteresse erfüllen kann.</p>
+            </section>
+            <section id="classsless">
+                <h2>Datengegestand</h2>
+                <p>Als Datengrundlage dient <a href="https://blogs.bard.edu/arendtcollection/">The Hannah Arendt
+                        Collection</a>, welche sich seit Arendts Tod im Jahre 1975 im Besitz des Bard College in
+                    Annadale-on-Hudson im Bundesstaat New York befindet. Bei der Sammlung handelt es sich um Arendts
+                    persönliche Handbibliothek, welche laut Internetpräsentation des Bard College insgesamt etwa 4000
+                    Werke umfasst und in ihrem letzten Wohnsitz in New York gefunden wurde. Von diesen Werken enthalten
+                    nach Angaben des Colleges etwa 900 Bücher Marginalia, Notizen, Unterstreichungen oder Widmungen
+                    durch die Autoren. Ziel der Hannah Arendt Collection ist es, die annotierte Privatbibliothek zu
+                    erhalten, zu scannen und alle Seiten mit Arendts Markierungen zu digitalisieren.</p>
+            </section>
+            <section>
+                <ol>
+                    <li id="fn1"><a href="#anker1">[1]</a>Jaspers, A./Kilcher, A. B. (2020), Einleitung – Lesen und Schreiben am Rand der Bücher, In: Jaspers, A./Kilcher, A. B. (Hrsg.), Randkulturen – Lese- und Gebrauchsspuren in Autorenbibliotheken des 19. und 20. Jahrhun-derts, Göttingen, S. 9.</li>
+                    <li id="fn2"><a href="#anker2">[2]</a>Ebd.S. 8.</li>
+                    <li id="fn3"><a href="#anker3">[3]</a>Jannidis, F./Kohle, H./Rehbein, M. (Hrsg.) (2017), Digital
+                        Humanities – Eine Einführung, S. 13.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+    <script src="docs/js/commons.min.js"></script>
+    <script src="docs/js/customization.min.js"></script>
 </body>
 
 
