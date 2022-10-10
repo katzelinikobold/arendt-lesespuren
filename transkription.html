@@ -77,7 +77,51 @@
         </aside>
         <div role="document">
             <section id="classless">
-                <h2></h2>
+                <h1>Transkription</h1>
+                <p>Die Praktische Anwendung findet das Modell in der Erfas-sung bzw. der Transkription. Das bedeutet, dass die in den Faksimiles auszumachenden Lesespuren in die Struktur des definierten Datenmodells überführt werden müssen. An dieser Stelle ist es notwendig das Modell auf eine bestimmte Technologie zu übertragen, welche zur Persistenz der Daten verwendet werden soll. Die hier verwendete Technologie ist das JSON-Format, welches bereits zur Korpusbildung verwendet wude. Die Umsetzung ist allerdings keineswegs an JSON gebunden, sondern könnte ebenso mithilfe von XML erfolgen, falls eine andere Technologie zu dem jeweiligen Forschungsvorhaben besser passt. Eine Beispieltranskription, an der die Datenstruktur nachvollzogen werden kann und anhand derer der Transkriptionsvorgang im Folgenden genauer beleuchtet wird, ist nachfolgend unten abgebildet.  
+                </p>
+                <details>
+                    <summary>JSON-Code eine Beispieltranskription</summary>
+                <code>
+                    {
+                        "id":"bfae1daa-e0b6-11ee-a674-0314f963ed25", 
+                        "book-id":"23019fbb-6d69-408f-9681-d297ce15e6b2",
+                                    
+                        "pencil-trace":{
+                        "id":"bfae1de8-e0b6-11ee-a675-9f94e8b8e259",
+                        "non-written":{
+                        "id":"bfae1de6-e0b6-11ee-a676-fff873ebe86e",
+                               "marginal-mark":{
+                                   "id":"bfae1e04-e0b6-11ee-a677-e7559e4a4d16",
+                                     "form":"line"
+                               }
+                        },
+                        utensil":"pencil"
+                        },
+                                    
+                        "location":{
+                        "book-coordinate":{
+                        "type":"text",
+                        "pages":{
+                        "start":11,
+                               "end":11
+                               }
+                        },
+                        "page-coordinate":{
+                        "type":"outer margin"
+                               }
+                        },
+                                        
+                        "reference-text":{
+                        "id":"bfae1e22-e0b6-11ee-a678-effaef4bdbe1",
+                        "text":"Es gibt nicht die eine allgemeingültige sachliche Struktur allen philosophischen Denkens.",
+                        "annotation-ids":["bfae1daa-e0b6-11ee-a674-0314f963ed25"],
+                        "language":"german"
+                        },
+                                        
+                        "relationships":[]
+                        }      
+                </code></details>
             </section>
         </div>
     </main>
