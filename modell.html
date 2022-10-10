@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="docs/css/pico.docs.min.css">
     <title>Masterarbeit Bruno</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="container">
         <ul>
-          <li><strong>Annotationsmodell Hannah Arendt</strong></li>
+            <li><strong>Annotationsmodell Hannah Arendt</strong></li>
         </ul>
         <ul>
-          <li><a href="#">Impressum</a></li>
+            <li><a href="#">Impressum</a></li>
         </ul>
-      </nav>
+    </nav>
     <main class="container" id="docs">
         <aside>
             <nav class="closed-on-mobile">
@@ -63,7 +65,8 @@
                             <a href="./auswertungSpuren.html" class="secondary">Auswertung der Lesespuren</a>
                         </li>
                         <li>
-                            <a href="./auswertungModell.html" class="secondary">Auswertung der Anwendbarkeit des Modells</a>
+                            <a href="./auswertungModell.html" class="secondary">Auswertung der Anwendbarkeit des
+                                Modells</a>
                         </li>
                     </ul>
                 </details>
@@ -77,14 +80,57 @@
         </aside>
         <div role="document">
             <section id="classless">
-                <h2></h2>
+                <h1>Das Annotationsmodell</h1>
+                <p>Der erste Schritt in der Modellierung von Daten ist die Erstellung eines kon-zeptuellen sowie eines
+                    logischen Datenmodells, in denen alle relevanten Entitäten und die dazugehörigen Attribute
+                    identifiziert werden.<sup><a id="anker1" title="Literaturangabe" href="#fn1">[1]</a></sup> Entitäten
+                    sind dabei abstrakt als alles zu verstehen, das als eine Einheit gedacht werden kann (z.B. Begriffe,
+                    Sachverhalte, Ereignisse oder Prozesse) und Attribute als diejenigen Eigenschaften, mit denen sie
+                    „individualisiert und beschrieben“ werden können.<sup><a
+                        id="anker2" title="Literaturangabe" href="#fn2">[2]</a></sup> Zur Beschreibung dieser Entitäten, ihrer Attribute
+                    und der Beziehungen zwischen den einzelnen Entitäten, wird zumeist die Darstellung als
+                    Entity-Relationship-Model (ERM) als De-Facto-Standard in der Datenmodellierung gewählt.<sup><a
+                        id="anker3" title="Literaturangabe" href="#fn3">[3]</a></sup> Aus diesem Grund wurde das
+                    Entity-Relationship-Modell auch hier als Mittel der Visualisierung des konzeptuellen Datenmodells in
+                    Abbildung 1 herangezogen, welche im Folgenden genauer beleuchtet werden soll. Bei dem abgebildeten
+                    Modell handelt es sich um eine visuelle Repräsentation des logischen Datenmodells, weil darin nicht
+                    nur die – im konzeptionellen Datenmodell identifizierten – notwendigen Entitäten als solche, sondern
+                    auch ihre Attribute mit wichtigen Details zur späteren Implementierung vorhanden sind.<sup><a
+                        id="anker4" title="Literaturangabe" href="#fn4">[4]</a></sup> Dabei ist zu beachten, dass die Benennungen der Entitäten im Modell zugunsten der besseren Wiederverwendbarkeit in englischer Sprache formuliert wurden.</p>
+            </section>
+            <section>
+                <figure>
+                    <img src="./images/Arendt_Datenmodell.svg" alt="Datenmodell">
+                    <figcaption>Abbildung 1: Datenmodell zur Erfassung von Hannah Arendts Lesespuren</figcaption>
+                </figure>
+            </section>
+            <section>
+                <p>Betrachtet man die Abbildung, so fällt auf, dass das Entity-Relationship-Model aus mehreren Kästen und verbindenden Linien besteht. Die Kästen stellen dabei die einzelnen Entitäten mit ihren zugehörigen Attributen dar. Die Linien verdeutlichen eine Beziehung zwischen diesen Entitäten und werden zusätzlich mit Kardinalitäten versehen. Diese geben an, an wie vielen Beziehungen dieses Typs eine Entität beteiligt sein kann.<sup><a
+                    id="anker5" title="Literaturangabe" href="#fn5">[5]</a></sup> Die Kardinalitäten im abgebildeten Modell verdeutlichen daher, dass bei einer Kardinalität von 1 eine einzige Beziehung, von 0..1 keine oder eine, oder von 0..* keine bis beliebig viele Relationen bestehen können.</p>
+                <p>Der "type" von "annotation" trifft eine Aussage darüber, um welche Art von Lesespur es sich handelt und ist damit als Kategorisierung der Lesespuren zu verstehen. Möglich sind für "annotation" die beiden Typ-Ausprägungen "pencil trace" (Stiftspur) und "non-pencil trace" (Nicht-Stiftspur) gemäß der in der <a href="./einordnung.html">Einordnung</a> getroffenen Unterscheidung. Die "non-pencil trace" enthält lediglich die Attribute "id" und "type", da die Nicht-Stiftspuren im Rahmen dieser Untersuchung aufgrund der Ausgangslage der Daten nicht systematisch erfasst werden konnten. Hier kann demnach bei möglicher Wiederverwendung des Modells eine Ergänzung und Erweiterung der Typen von Nicht-Stiftspuren erfolgen. Die Ausprägung des Typs "pencil trace" besitzt "id" und "type" hinaus noch das Attribut "utensil", welches Auskunft darüber gibt mit welchem Schreibwerkzeug die Lesespur erzeugt wurde (z.B. Bleistift).</p>
+                <p>Das Attribut "type" der "pencil trace" spaltet sich wiederum in die beiden Kategorien "non-written" (nicht-schriftlich) und "written" (schriftlich) mit den jeweiligen Attributen "id" und "type" auf. Nicht-schriftlich sind diejenigen Markierungen, die keine geschriebenen Wörter oder andere Symbole aus der Schriftsprache (z.B. Ausrufungszeichen etc.) enthalten. Diese Markierungen können in den Varianten "text mark", "marginal mark" und "drawing" vorkommen, von denen jede Entität die Merkmale "id" und "form" besitzt. Unter "text mark" sind all diejenigen Annotationen zu verstehen, welche sich auf dem Satzspiegel der Seite befinden. Darunter sind zum Beispiel Unter- oder Durchstreichungen zu fassen. Die "marginal marks" dagegen sind Markierungen, die sich außerhalb des Satzspiegels, also auf Kopf-, Außen-, Bund- oder Fußsteg befinden. Dabei handelt es sich demnach beispielsweise um Anstreichungen. Hinsichtlich der beiden Typen "marginal mark" und "text mark" wurde bewusst darauf verzichtet eine Benennung wie beispielsweise "underlining" zu verwenden, da dies bereits eine bestimmte Form der Annotation unterstellt. Die gewählten Begriffe sollen daher lediglich die Position der Annotation verdeutlichen, sodass sie durch das Attribut "form" einheitlich benannt, dadurch genauer beschrieben und zu einem späteren Zeitpunkt besser feingranularer ausgewertet werden können. Unter der Entität "drawing" als nicht-schriftliche Lesespur sind tatsächlich Zeichnungen zu verstehen, die der Leser bei der Lektüre hinterlässt. Durch das Attribut "form" kann auch hier eine individuelle Benennung erfolgen.</p>
+                <p>Auch der Typ "written" gliedert sich in mehrere mögliche Entitäten zur Ausprägung auf. Die Unterscheidung der einzelnen Typen erfolgt hier nicht wie bei den nicht-schriftlichen Stiftspuren hinsichtlich der Position, sondern auf semantischer Ebene. Sollte bei Adaption des Modells eine weitere semantisch distinkte Unterkategorie der Schriftspur ausgemacht werden, kann diese prob-lemlos mit den dazugehörigen Attributen ergänzt werden. Da es sich hier um ein Datenmodell zur Erfassung der des Originals der Lesespuren Hannah Arendts in zwei ausgewählten Werken von Karl Jaspers handelt, wurden auch nur diejenigen Schriftspuren als Typen erfasst, die dafür potenziell relevant sind. Diese erheben jedoch keineswegs den Anspruch auf Vollständigkeit und müssen zur Untersuchung der Lesespuren in anderen Kontexten erweiterbar sein. Die schriftlichen Lesespuren können in diesem spezifischen Datenmodell zu Hannah Arendt entweder eine "translation" (Übersetzung), eine "reference" (Verweis), ein "judging comment" (wertender Kommentar), ein "replacement" (Ersetzung), ein "comment" (Kommentar) oder eine addition (Ergänzung) sein. Jedes dieser Elemente besitzt grundsätzlich vier Attribute. Das erste Attribut ist dabei wie bei allen Entitäten im Modell die "id". An zweiter Stelle steht der text, in dem der konkrete Textinhalt der schriftlich verfassen Annotation vermerkt wird. Language bildet die Sprache dieses Textes ab. Die "certainty" (Sicherheit) gibt an, wie zuverlässig die schriftliche Annotation korrekt gelesen und erfasst werden kann. Darüber hinaus gibt es einige Entitäten in dieser Kategorie, welche zusätzliche Attribute besitzen. Zum ersten gehört dazu die "reference", welche ergänzend die Eigenschaft "target text", also den Text, auf den verwiesen wird, enthält. Das "judging comment" besitzt im Gegensatz zu dem gewöhnlichen comment das Attribut sentiment, durch den festlegt werden kann, ob es sich um einen positiv oder negativ gefärbten wertenden Kommentar handelt. Die Unterscheidung in wertenden Kommentar und Kommentar wurde in Anlehnung an die „Erfassungsmatrix“ von Busch zur Erfassung der Lesespuren Theodor Fontanes getroffen. Bei einem wertenden Kommentar handelt es sich beispielsweise um Aussagen wie „Gut!“ oder „Pfui!“, durch die also eine explizite Wertung des gelesenen Textes ausgedrückt wird.<sup><a
+                    id="anker6" title="Literaturangabe" href="#fn6">[6]</a></sup> Diese Trennung in der Erfassung ermöglicht eine detailliertere Betrachtung in einer späteren Auswertung.</p>
+                <p>Nach dem "type" als Attribut zur Kategorisierung ist in "annotation" das Attribut "location" auszumachen. Diese Entität gibt den Ort der Annotation im Buch selbst vor und besteht ihrerseits aus einer "page coordinate" (Seiten-Koordinate) und einer "book coordinate" (Buch-Koordinate). Die "page coordinate" besitzt lediglich das Merkmal "type", durch den angegeben werden kann, ob sich die Annotation innerhalb einer oder mehrerer bestimmter auf dem Satzspiegel, Außen-, Bund-, Fuß- oder Kopfsteg befindet. Mithilfe der "book coordinate" wird durch das Attribut "type" verdeutlicht wo im Buch, also in der Titelei, im Nachspann oder im Text, die Lesespur angesiedelt ist. Die Entität pages besitzt ihrerseits die Attribute "start" und "end", durch die erkenntlich wird, auf welcher Seite bzw. auf welchen Seiten sich die Annotation befindet. Falls sich die Annotation über mehrere Seiten erstreckt, kann mithilfe dieser beiden Koordinaten die Annotation eindeutig im Buch verortet und wiedergefunden werden.</p>
+                <p>Die Entität "reference text" (Referenztext) repräsentiert den Abschnitt im Text des gedruckten Buches, auf den sich die jeweilige Annotation bezieht. Da auch dieser Textabschnitt, auf den die Lesespur Bezug nimmt von großem Interesse in der quantitativen sowie qualita-tiven Analyse ist, wird dieser im vorliegenden Datenmodell vollständig mit erfasst. Wie auch nahezu alle anderen Entitäten, besitzt auch "reference text" eine "id". In "text" wird entsprechend der im gedruckten Buch abgebildete Referenztext vermerkt. Die "annotation ids" sind eine Liste von ids der "annotations", die Bezug auf genau den gleichen "reference text" nehmen. Dazu zählt mindestens diejenige "annotation", die in diesem Moment betrachtet wird. Sollten mehrere Lesespuren denselben Referenztext aufweisen, werden deren ids in "annotation ids" aufgeführt. Auf diese Weise kann leicht – auch maschinell – nachvollzogen werden wie viele Annotationen sich auf den gleichen Textabschnitt beziehen. Das Attribut "language" gibt auch hier die Sprache des in text abgebildeten Referenztexts an.</p>
+                <p>Das letzte hier zu beleuchtende Attribut in "annotations" ist "relationships" (Beziehungen). Dabei handelt es sich um eine Liste von Lesespuren, die mit der momentan betrachteten in einer etwaigen Beziehung stehen. Dies kann zum Beispiel der Fall sein, wenn die Lesespuren zusammenhängen (z.B. bei einem Verweis, der Bezug auf eine andere Lesespur verweist) oder sich der Referenztext zweier Annotationen überschneidet bzw. identisch ist. </p>
+            </section>
+
+            <section>
+                <li id="fn1"><a href="#anker1">[1]</a>Jannidis, F./Kohle, H./Rehbein, M. (Hrsg.) (2017), Digital
+                    Humanities – Eine Einführung, S. 103.</li>
+                <li id="fn2"><a href="#anker2">[2]</a>Ebd., S. 104.</li>
+                <li id="fn3"><a href="#anker3">[3]</a>Ebd.</li>
+                <li id="fn4"><a href="#anker4">[4]</a>Jannidis, F./Flanders, J. (2019), A gentle introduction to data modeling, In: Flanders, J./Jannidis, F. (Hrsg.), The shape of data in the digital humani-ties: modeling texts and text-based resources, London/New York, S. 57.</li>
+                <li id="fn5"><a href="#anker5">[5]</a>Ebd.</li>
+                <li id="fn6"><a href="#anker6">[6]</a>Busch, A. (2020), Fonate als Leser – Zur Visualisierung von Lese- und Ge-brauchsspuren in Fontanes Bibliothek, In: Jaspers, A./Kilcher, A. B. (Hrsg.), Randkulturen – Lese- und Gebrauchsspuren in Autorenbiblio-theken des 19. und 20. Jahrhunderts, Göttingen, S. 229.</li>
             </section>
         </div>
     </main>
     <script src="docs/js/commons.min.js"></script>
     <script src="docs/js/customization.min.js"></script>
 
-  </body>
+</body>
 
 
 </html>
