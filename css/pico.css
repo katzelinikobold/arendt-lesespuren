@@ -308,7 +308,7 @@ kbd {
   color-scheme: light;
 }
 
-@media only screen and (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: light) {
   :root:not([data-theme=light]) {
     --background-color: #11191f;
     --color: hsl(205deg, 16%, 77%);
